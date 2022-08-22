@@ -1,15 +1,98 @@
 /* 64ac15 */
-*,
+/* *,
 *:before,
 *:after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 body {
   padding: 1em;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
-  color: #b9b9b9;
-  background-color: #e3e3e3;
+  /* color: #b9b9b9; */
+  color: #555;
+}
+
+/*/////////////////////////////////////////////
+/////////// Nav Section //////////////////////
+////////////////////////////////////////////*/
+
+#section-navbar {
+  margin-bottom: 150px;
+  height: 100%;
+  width: 100%;
+}
+
+/* #section-navbar .container {
+  background-color: #fdf2e9;
+} */
+
+#section-navbar h1 {
+  margin-top: 150px;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.nav-item button:hover {
+  background-color: #f0a500;
+  border: none;
+}
+
+#undo {
+  background-color: #f0a500;
+}
+
+/*/////////////////////////////////////////////
+/////////// Slider Section //////////////////////
+////////////////////////////////////////////*/
+
+#section-slider {
+  margin-bottom: 350px;
+  display: none;
+
+  padding-bottom: 200px;
+}
+
+/* .carousel-inner {
+  height: 500px;
+  width: 100%;
+} */
+
+#section-slider .container {
+  width: 50%;
+  /* height: 10%; */
+}
+
+.carousel-inner .item {
+  height: 100%;
+  width: 100%;
+
+  background-size: contain;
+}
+
+.carousel-inner .item img {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+/*/////////////////////////////////////////////
+/////////// Form Section //////////////////////
+////////////////////////////////////////////*/
+
+#section-form {
+  display: none;
+  margin-bottom: 200px;
 }
 h2 {
   color: #f0a500;
@@ -176,7 +259,7 @@ select option {
   transition: 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-.container {
+.container-real {
   max-width: 38em;
   padding: 1em 3em 2em 3em;
   margin: 0em auto;
